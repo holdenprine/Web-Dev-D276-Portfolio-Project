@@ -1,28 +1,47 @@
-// Function to get and display the current date
 function displayCurrentDate() {
-    // Create a new Date object
+    
     const currentDate = new Date();
     
-    // Format the date as a readable string
-    // Options for date formatting
     const options = { 
         year: 'numeric', 
         month: 'long', 
         day: 'numeric' 
     };
     
-    // Format the date (e.g., "January 15, 2025")
+    
     const formattedDate = currentDate.toLocaleDateString('en-US', options);
     
-    // Get the element where we want to display the date
     const dateElement = document.getElementById('current-date');
     
-    // Update the element's text content with the formatted date
     if (dateElement) {
         dateElement.textContent = formattedDate;
     }
 }
 
-// Call the function when the page loads
 document.addEventListener('DOMContentLoaded', displayCurrentDate);
+
+function confirmConnection(pageName) {
+    console.log(`Currently on ${pageName} page`);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const path = window.location.pathname;
+    let pageName = 'Unknown';
+    
+    switch (true) {
+        case path.includes('resume'):
+            pageName = 'Resume';
+            break;
+        case path.includes('cover-letter'):
+            pageName = 'Cover Letter';
+            break;
+        case path.includes('career-goals'):
+            pageName = 'Career Goals';
+            break;
+        default:
+            pageName = 'Home';
+    }
+    
+    confirmConnection(pageName);
+});
 
