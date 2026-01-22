@@ -13,3 +13,30 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
+
+.skills-section {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.skills-section table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skills-section th,
+.skills-section td {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+
+.skills-section th {
+    background-color: #f0f0f0;
+    font-weight: 500;
+}
