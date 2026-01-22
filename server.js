@@ -9,7 +9,7 @@ app.use(express.static(__dirname));
 
 // Route for homepage - serve resume.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'resume.html'));
+    res.sendFile(path.join(__dirname, 'html', 'resume.html'));
 });
 
 // Start server
@@ -18,7 +18,7 @@ app.listen(PORT, () => {
     console.log(`Homepage (/) serves resume.html`);
     console.log(`\nAvailable pages:`);
     console.log(`  - http://localhost:${PORT}/ (Resume - Homepage)`);
-    console.log(`  - http://localhost:${PORT}/cover-letter.html`);
-    console.log(`  - http://localhost:${PORT}/career-goals.html`);
+    console.log(`  - http://localhost:${PORT}/html/cover-letter.html`);
+    console.log(`  - http://localhost:${PORT}/html/career-goals.html`);
 });
 
