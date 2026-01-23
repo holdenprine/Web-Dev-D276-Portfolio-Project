@@ -124,6 +124,11 @@ img {
     margin: 0 auto;
 }
 
+audio {
+    display: block;
+    margin: 0 auto;
+}
+
 #current-date {
     font-weight: 500;
     color: #0066cc;
