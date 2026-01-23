@@ -129,6 +129,11 @@ audio {
     margin: 0 auto;
 }
 
+video {
+  display: block;
+  margin: 0 auto;  
+}
+
 #current-date {
     font-weight: 500;
     color: #0066cc;
