@@ -21,7 +21,11 @@ function displayCurrentDate() {
 document.addEventListener('DOMContentLoaded', displayCurrentDate);
 
 function confirmConnection(pageName) {
-    console.log(`Currently on ${pageName} page`);
+    if (pageName === 'Unknown') {
+        console.error('Error: Page did not load properly or path not recognized');
+    } else {
+        console.log(`Currently on ${pageName} page`);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             pageName = 'Career Goals';
             break;
         default:
-            pageName = 'Home';
+            pageName = 'Unknown';
     }
     
     confirmConnection(pageName);
