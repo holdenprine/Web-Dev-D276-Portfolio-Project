@@ -40,6 +40,16 @@ body {
     font-weight: 500;
 }
 
+.cover-letter-header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.career-goals-header {
+    text-align: center;
+    padding: 1rem;
+}
+
 form {
     text-align: center;
     border: 1px solid #000;
@@ -104,6 +114,14 @@ p {
     color: #333;
     line-height: 1.6;
     margin: 0.75rem 0;
+}
+
+img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #current-date {
