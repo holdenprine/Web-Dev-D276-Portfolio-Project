@@ -69,15 +69,22 @@
                     <input type="tel" name="phone" id="phone" required/>
                 </div>
                 <div>
-                    <legend>Best contact time</legend>
-                    <label><input type="radio" name="radio" id="radio" value="am"/>A.M.</label>
-                    <label><input type="radio" name="radio" id="radio" value="pm"/>P.M.</label>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message"></textarea>
                 </div>
                 <div>
-                    <legend>Prefered Contact</legend>
-                    <label><input type="radio" name="radio" id="radio" value="phone"/>Phone</label>
-                    <label><input type="radio" name="radio" id="radio" value="email"/>Email</label>
-                    <label><input type="radio" name="radio" id="radio" value="text"/>Text Message</label>
+                    <legend>Best contact time</legend>
+                    <label><input type="radio" name="radio" id="radio" value="am"/> A.M.</label>
+                    <label><input type="radio" name="radio" id="radio" value="pm"/> P.M.</label>
+                    <label><input type="radio" name="radio" id="radio" value="anytime"/> Anytime</label>
+                </div>
+                <div>
+                    <label for="contact-method">Preferred Contact Method</label>
+                    <select name="contact-method" id="contact-method" required>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select>
                 </div>
                 <div>
                     <button>Submit</button>
