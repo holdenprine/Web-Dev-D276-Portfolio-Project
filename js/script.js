@@ -18,6 +18,10 @@ function displayCurrentDate() {
     }
 }
 
+function confirmationLog() {
+    console.log('Hello from the console! The Site is Working!')
+}
+
 document.addEventListener('DOMContentLoaded', displayCurrentDate);
 
 function confirmConnection(pageName) {
@@ -29,6 +33,9 @@ function confirmConnection(pageName) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    confirmationLog();
+
     const path = window.location.pathname;
     let pageName = 'Unknown';
     
